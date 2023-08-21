@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*Colors*/
+  --footer: hsl(243, 87%, 12%);
+  --sub-footer: hsl(238, 22%, 44%);
+  --hover-states: hsl(224, 93%, 58%);
+  --tool-tip: hsl(170, 45%, 43%);
+  --text-color: white;
+  --bg: hsl(240, 75%, 98%);
+  --box-shadow: hsl(0, 0%, 75%);
+  /*Font Familys*/
+  --main-font: Raleway, sans-serif;
+  --body-font: Open Sans, sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
