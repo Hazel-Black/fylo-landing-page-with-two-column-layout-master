@@ -8,18 +8,359 @@
   --footer: hsl(243, 87%, 12%);
   --sub-footer: hsl(238, 22%, 44%);
   --hover-states: hsl(224, 93%, 58%);
+  --btn-hover: hsla(224, 93%, 58%, 0.596);
   --tool-tip: hsl(170, 45%, 43%);
   --text-color: white;
-  --bg: hsl(240, 75%, 98%);
+  --middle-bg: hsl(240, 75%, 98%);
   --box-shadow: hsl(0, 0%, 75%);
   /*Font Familys*/
-  --main-font: Raleway, sans-serif;
-  --body-font: Open Sans, sans-serif;
+  --main-font: "Raleway", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  color: var(--footer);
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 2em;
+  padding-inline-end: 2em;
+  width: 100%;
+}
+header nav img {
+  width: 6em;
+  padding-inline-start: 1em;
+}
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 1em;
+}
+
+.illustration img {
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+h1 {
+  font-family: var(--body-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+.top-section {
+  padding-inline: 2em;
+}
+.top-section p {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+input {
+  width: 100%;
+  border-radius: 0.2em;
+}
+input:invalid {
+  border: rgb(255, 114, 114) solid 2px;
+}
+
+span{
+  color: rgb(255, 114, 114);
+}
+input[type="email"] {
+  border: var(--footer) solid 0.5px;
+  padding: 1em;
+}
+::placeholder {
+  color: var(--box-shadow);
+  font-weight: 400;
+  font-family: var(--main-font);
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: var(--hover-states);
+  border: none;
+  margin-top: 1.5em;
+  font-weight: 600;
+  font-family: var(--main-font);
+  padding: 1em;
+}
+.submit-1:hover {
+  background-color: var(--btn-hover);
+}
+.submit-2:hover {
+  background-color: var(--btn-hover);
+}
+.middle-section {
+  background: url(images/bg-curve-mobile.svg) no-repeat bottom center;
+  background-size: 110em 55em;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.illustration-2 img {
+  width: 100%;
+  margin-top: 10em;
+  margin-bottom: 2em;
+  padding-inline: 2em;
+}
+h2 {
+  margin-top: 2em;
+  font-size: 1rem;
+  text-align: center;
+}
+.par {
+  padding-inline: 2em;
+}
+.par {
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.tool-tip {
+  text-align: center;
+  color: var(--tool-tip);
+  text-decoration: var(--tool-tip) solid underline 2px;
+}
+.tool-tip-flex {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.arrow img {
+  width: 100%;
+}
+.qoute-section {
+  padding-inline: 2em;
+  margin-top: 2em;
+}
+.qoute-box {
+  background-color: white;
+  padding-block: 1em;
+  padding-inline: 1.5em;
+  border-radius: 0.3em;
+}
+.qoute {
+  height: 1em;
+  width: 1em;
+}
+.qoute img {
+  height: 100%;
+  width: 100%;
+}
+.testimonial {
+  margin-top: 0.5em;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+.qoute-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+.qoute-img {
+  width: 3em;
+  margin-right: 1em;
+}
+.qoute-img img {
+  width: 100%;
+  border-radius: 4em;
+}
+.name {
+  margin-bottom: 0.5em;
+}
+.founder {
+  font-size: 0.65rem;
+}
+.bottom-section {
+  background-color: var(--sub-footer);
+  color: white;
+  padding-inline: 2em;
+  padding-block: 3em;
+}
+h3 {
+  margin-bottom: 1em;
+}
+.bottom-section p {
+  line-height: 1.5;
+  font-family: var(--body-font);
+  margin-bottom: 2em;
+}
+.bottom-section input[type="email"] {
+  border: none;
+}
+footer {
+  background-color: var(--footer);
+  text-align: left;
+  padding-block: 4em;
+  padding-inline: 2em;
+  color: white;
+}
+.footer-conatiner img {
+  display: inline;
+}
+.col-flex {
+  display: flex;
+  margin-top: 1em;
+}
+.col-flex img {
+  margin-right: 1em;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+footer nav ul {
+  list-style: none;
+}
+footer nav ul li {
+  margin-bottom: 1em;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.icon {
+  border: 2px white solid;
+  padding-block: 0.5em;
+  padding-inline: 0.7em;
+  border-radius: 5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--hover-states);
+}
+@media (min-width: 800px) {
+  body {
+    text-align: left;
+  }
+  header nav ul li {
+    margin-left: 3em;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-1 {
+    display: flex;
+    max-width: 30em;
+  }
+  input:invalid {
+    border: rgb(255, 114, 114) solid 2px;
+    
+  }
+  
+
+  input[type="email"] {
+    margin-top: 0.1em;
+    margin-right: 1em;
+margin-bottom: 1em;
+    padding: 01em;
+  }
+  .email-1{
+    height: 4em;
+    width: 
+    23em;
+  }
+
+  input[type="submit"] {
+    margin-top: 0.1em;
+  }
+  .submit-1{
+    height: 4em;
+  }
+  .middle-section {
+    flex-direction: row-reverse;
+    background-size: 140em 38em;
+    padding-top: 10em;
+    justify-content: baseline;
+    align-items: center;
+  }
+  .illustration-2 img {
+    margin-top: 1em;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+  .tool-tip-flex {
+    justify-content: left;
+    padding-inline: 2em;
+  }
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .bottom-section p {
+    max-width: 32em;
+    margin-right: 2em;
+  }
+  .email-2 {
+    width: 30em;
+    margin-bottom: 1em;
+    display: block;
+  }
+  .submit-2 {
+    width: 15em;
+    padding-inline: 1em;
+    padding-block: 1em;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .icon {
+    height: 2.5em;
+    width: 2.5em;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .middle-section {
+    background-image: url(images/bg-curve-desktop.svg);
+    background-size: 240% 45em;
+  }
+  .qoute-box {
+    width: 20em;
+  }
+  h2 {
+    font-size: 2.2rem;
+    margin-top: 2em;
+  }
 }
