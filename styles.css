@@ -68,11 +68,10 @@ input {
   width: 100%;
   border-radius: 0.2em;
 }
-input:invalid {
-  border: rgb(255, 114, 114) solid 2px;
-}
+
 
 span{
+  display: none;
   color: rgb(255, 114, 114);
 }
 input[type="email"] {
@@ -84,6 +83,7 @@ input[type="email"] {
   font-weight: 400;
   font-family: var(--main-font);
 }
+
 
 input[type="submit"] {
   color: white;
@@ -273,10 +273,8 @@ footer nav ul li a {
     display: flex;
     max-width: 30em;
   }
-  input:invalid {
-    border: rgb(255, 114, 114) solid 2px;
-    
-  }
+ 
+
   
 
   input[type="email"] {
